@@ -26,20 +26,20 @@ const Chart = ( {data: { confirmed, deaths, recovered }, country} ) => {
                     datasets: [{
                         data: dailyData.map((data) => data.confirmed),
                         label: "Infected",
-                        borderColor: 'yellow',
+                        borderColor: 'rgba(255, 189, 82, 0.335)',
                         fill: true
                     }, {
                         data: dailyData.map((data) => data.deaths),
                         label: "Deaths",
-                        borderColor: 'yellow',
-                        backgroundColor: 'rgba(255, 0, 0, 0.5)',
+                        borderColor: 'rgba(167, 79, 86, 0.294)',
+                        backgroundColor: 'rgba(167, 79, 86, 0.294)',
                         fill: true
                     },
                     {
                         data: dailyData.map((data) => data.recovered),
                         label: "Recovered",
-                        borderColor: 'yellow',
-                        backgroundColor: 'rgba(255, 0, 0, 0.5)',
+                        borderColor: 'rgba(96, 161, 66, 0.377)',
+                        backgroundColor: 'rgba(96, 161, 66, 0.377)',
                         fill: true
                     },
                 
@@ -58,9 +58,9 @@ const Chart = ( {data: { confirmed, deaths, recovered }, country} ) => {
                         datasets: [{
                             label: 'People',
                             backgroundColor: [
-                                'rgba(0, 0, 255, 0.5)',
-                                'rgba(102, 255, 0, 0.5)',
-                                'rgba(207, 4, 21, 0.5)'
+                                'rgba(255, 189, 82, 0.335)',
+                                'rgba(96, 161, 66, 0.377)',
+                                'rgba(167, 79, 86, 0.294)'
                             ],
                             data:[confirmed.value, recovered.value, deaths.value]
                         }]

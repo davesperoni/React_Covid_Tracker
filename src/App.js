@@ -27,11 +27,30 @@ class App extends React.Component {
         const { data, country } = this.state;
 
         return(
-            <div className={styles.container}>
-                <img className={styles.image} src={coronaImage} alt="COVID-19"/>
-                <Cards data={data}/>
-                <CountryPicker2 handleCountryChange={this.handleCountryChange}/>
-                <Chart data={data} country={country}/>
+            <div>
+
+                <span className={styles.container}>
+                    <img className={styles.image} src={coronaImage} alt="COVID-19"/>
+                    <Cards className={styles.cards} data={data}/>
+                </span>
+
+                <span className={styles.graphContainer}>
+                    <CountryPicker2 handleCountryChange={this.handleCountryChange}/>
+                    <Chart data={data} country={country}/>
+                </span>
+                <span className={styles.footerContainer}>
+                    <ul>
+                        <h4>Built with:</h4>
+                        <li>React.js</li>
+                        <li>React-Chart.js</li>
+                        <li>Material-UI</li>
+                        <li>AWS Amplify</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <a href = "https://davidsperoni.com" className={styles.backButton}>Back to Portfolio</a>
+
+                </span>
+                            
             </div>
         )
     }

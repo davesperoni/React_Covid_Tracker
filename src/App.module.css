@@ -1,22 +1,69 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(237, 241, 241);
 }
 
 .container {
     display: flex;
+    align-content: center;
     align-items: center;
     justify-content: center;
+}
+
+.graphContainer {
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.image {
-    width: 370px;
-    margin-top: 50px;
+.footerContainer {
+    padding-top:80px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 770px) {
+ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: rgb(180, 180, 180);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.image {
+    width: 400px;
+}
+
+.cards {
+    background: green;
+}
+
+.footerContainer {
+    margin-top: 1rem;
+    margin: 20px;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.backButton {
+    margin: 20px;
+    font-size: 18px;
+    color: rgb(0, 105, 175);
+}
+
+@media (max-width: 800px) {
     .container {
         margin: 0 10%;
+        display: flex;
+
+        flex-direction: column;
     }
 
     .image {
