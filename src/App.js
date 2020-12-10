@@ -3,7 +3,7 @@ import React from 'react';
 import { Cards, Chart, CountryPicker2 } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
-import coronaImage from './images/pic1.jpg';
+import coronaImage from './images/covidReact_logo.png';
 
 class App extends React.Component {
 
